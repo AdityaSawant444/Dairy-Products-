@@ -26,8 +26,6 @@ SECRET_KEY = 'django-insecure-&47!^li--rstz5%&x4q&1+jd4$_e)9@n%6y7^i*6!%f58i(msi
 DEBUG = True
 
 ALLOWED_HOSTS = ['dairy-products-6a3o.onrender.com']
-
-
 # Application definition
 
 INSTALLED_APPS = [

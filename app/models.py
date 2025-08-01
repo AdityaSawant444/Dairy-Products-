@@ -97,13 +97,7 @@ STATUS_CHOICES = (
     ('Pending', 'Pending'),
 )
 
-class Payment(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    amount = models.FloatField()
-    razorpay_order_id = models.CharField(max_length=100, blank=True, null=True)
-    razorpay_payment_status = models.CharField(max_length=100, blank=True, null=True)
-    razorpay_payment_id = models.CharField(max_length=100, blank=True, null=True)
-    paid = models.BooleanField(default=False)    
+ 
     
 
 class OrderPlaced(models.Model):
@@ -113,7 +107,7 @@ class OrderPlaced(models.Model):
     quantity = models.PositiveIntegerField(default=1)
     ordered_date = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=50, choices=STATUS_CHOICES, default='Pending')
-    payment = models.ForeignKey(Payment, on_delete=models.CASCADE, default="")
+    
 
     @property
     def total_cost(self):
