@@ -17,6 +17,7 @@ urlpatterns = [
     path("address/", views.address, name="address"),
     path("updateaddress/<int:pk>", views.UpdateAddress.as_view(), name="updateaddress"),
 
+
     path('add-to-cart/', views.add_to_cart, name='add-to-cart'),
     path('cart/', views.show_cart, name='showcart'),
     path('checkout/', views.checkout.as_view(), name='checkout'),
