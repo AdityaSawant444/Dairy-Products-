@@ -54,16 +54,8 @@
 }
 
 
-@media (max-width: 575.98px) { 
-  .add-to-cart, .buy-now {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    font-size: 1.1rem;
-    padding: 12px 0;
-    text-align: center;
-  }
-}
+@media (max-width: 400.98px) {
+    
   .row.container {
     flex-direction: column !important;
   }
@@ -79,6 +71,7 @@
   .milkpro {
     font-size: 1.1rem;
   }
+}
 
 @media (min-width: 576px) and (max-width: 991.98px) {
   .col-md-4, .col-sm-4 {
